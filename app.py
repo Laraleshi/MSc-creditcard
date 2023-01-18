@@ -107,8 +107,8 @@ st.markdown("AI's Prediction")
 if predict:
     predictions = st.session_state.model.predict(input_features)
     if predictions == 0:
-        st.success("AI predicts that this transaction is not frudulent ")
+        st.success("AI predicts that this transaction is not fraudulent ")
     elif predictions == 1:
-        st.error("AI predicts there's evidence that this transaction is frudulent")
+        st.error("AI predicts there's evidence that this transaction is fraudulent")
     else:
         st.empty()
